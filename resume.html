@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume builder new</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/resume.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navleft">
+            <img src="./images/hibban-logo.png" alt="">
+        </div>
+        <div class="navright">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="cross">
+                <i class="fa fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <div class="dialogbox">
+        <a href="./index.html">
+            <div class="home">
+                <p>Home</p>
+            </div>
+        </a>
+        
+        <div class="logout">
+            <p>logout</p>
+        </div>
+    </div>
+    
+    <div class="details">
+
+
+        <div class="about">
+            <div class="heading">
+                <p>ABOUT SECTION</p>
+            </div>
+            <form id="aboutForm">
+                <div class="row">
+                    <div class="labelInput">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="eg.Hibban">
+                    </div>
+                    <div class="labelInput">
+                        <label for="middleName">Middle Name</label>
+                        <input type="text" id="MiddleName" placeholder="eg.ur">
+                    </div>
+                    <div class="labelInput">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="eg.Rahman">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="labelInput">
+                        <label for="YourImage">Your Image</label>
+                        <input type="file" id="yourImage" placeholder="">
+                    </div>
+                    <div class="labelInput">
+                        <label for="Designation">Designation</label>
+                        <input type="text" id="designation" placeholder="eg. student">
+                    </div>
+                    <div class="labelInput">
+                        <label for="Address">Address</label>
+                        <input type="text" id="address" placeholder="eg. bilaspur,hayaghat">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="labelInput">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="eg.hibbanrahmanhyt@gmail.com">
+                    </div>
+                    <div class="labelInput">
+                        <label for="Phone No.">Phone No:</label>
+                        <input type="phone" id="phone" placeholder="eg.+91-9971252523">
+                    </div>
+                    <div class="labelInput">
+                        <label for="summary">Summary</label>
+                        <input type="text" id="summary" placeholder="eg.Rahman">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="achivements">
+            <div class="heading">
+                <p>ACHIEVEMENTS</p>
+            </div>
+            <div class="adding">
+                <form id="achivementForm">
+                    <div class="row">
+                        <div class="labelInput">
+                            <label for="Title">Title</label>
+                            <input type="text" id="titleAchievement" placeholder="">
+                        </div>
+                        <div class="labelInput">
+                            <label for="description">Description</label>
+                            <input type="text" id="descriptionAchivement" placeholder="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="add" id="AddAchivement">+</div>
+        </div>
+
+
+        <div class="experience">
+            <div class="heading">
+                <p>EXPERIENCE</p>
+            </div>
+            <div class="adding">
+                <form id="experienceForm">
+                    <div class="row">
+                        <div class="labelInput">
+                            <label for="Title">Title</label>
+                            <input type="text" id="titleExperience" placeholder="">
+                        </div>
+                        <div class="labelInput">
+                            <label for="company">Company / Organization</label>
+                            <input type="text" id="company" placeholder="eg. amazon">
+                        </div>
+                        <div class="labelInput">
+                            <label for="location">Location</label>
+                            <input type="text" id="locationExperinece" placeholder="eg. Hyderabad">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labelInput">
+                            <label for="start date">Start Date</label>
+                            <input type="date" id="startDateEx" placeholder="mm/dd/yy">
+                        </div>
+                        <div class="labelInput">
+                            <label for="end date">End Date</label>
+                            <input type="date" id="endDateEx" placeholder="mm/dd/yy">
+                        </div>
+                        <div class="labelInput">
+                            <label for="description">Description</label>
+                            <input type="text" id="descriptionExperience" placeholder="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="add" id="AddExperience">+</div>
+        </div>
+
+
+        <div class="education">
+            <div class="heading">
+                <p>EDUCATION</p>
+            </div>
+            <div class="adding">
+                <form id="educationForm">
+                    <div class="row">
+                        <div class="labelInput">
+                            <label for="school">School</label>
+                            <input type="text" id="school" placeholder="">
+                        </div>
+                        <div class="labelInput">
+                            <label for="Degree">Degree</label>
+                            <input type="text" id="degree" placeholder="">
+                        </div>
+                        <div class="labelInput">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="eg. Hyderabad">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labelInput">
+                            <label for="start date">Start Date</label>
+                            <input type="date" id="startDateEd" placeholder="mm/dd/yy">
+                        </div>
+                        <div class="labelInput">
+                            <label for="end date">End Date</label>
+                            <input type="date" id="endDateEd" placeholder="mm/dd/yy">
+                        </div>
+                        <div class="labelInput">
+                            <label for="description">Description</label>
+                            <input type="text" id="descriptionEducation" placeholder="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="add" id="AddEducation">+</div>
+        </div>
+
+
+        <div class="projects">
+            <div class="heading">
+                <p>PROJECTS</p>
+            </div>
+            <div class="adding">
+                <form id="projectForm">
+                    <div class="row">
+                        <div class="labelInput">
+                            <label for="project">Project Name</label>
+                            <input type="text" id="projectName" placeholder="">
+                        </div>
+                        <div class="labelInput">
+                            <label for="project link">Project Link</label>
+                            <input type="url" id="projectLink" placeholder="">
+                        </div>
+                        <div class="labelInput">
+                            <label for="Description">Description</label>
+                            <input type="txt" id="descriptionProject" placeholder="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="add" id="AddProjects">+</div>
+        </div>
+
+        <div class="skills">
+            <div class="heading">
+                <p>SKILLS</p>
+            </div>
+            <div class="adding">
+                <form id="skillForm">
+                    <div class="row">
+                        <div class="labelInput">
+                            <label for="skill">Skill</label>
+                            <input type="text" id="skill" placeholder="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="add" id="AddSkill">+</div>
+        </div>
+    </div>
+
+
+    <!--========================= this is show resume section =================================--->
+    <div class="show">
+        <div class="left">
+            <div class="firstUpper">
+                <div class="profileImg">
+                    <img src="./images/hibban-photo.png" alt="profile Image">
+                </div>
+                <h1>Hibbanur Rahman</h1>
+                <div class="line"></div>
+                <p>Student</p>
+            </div>
+            <div class="show-about">
+                <h1>ABOUT</h1>
+                <p>+91-9973152523</p>
+                <p>hibbanrahmanhyt@gmail.com</p>
+                <p>Hayaghat,darbhanga</p>
+                <p>This is about Hibbanur Rahman</p>
+            </div>
+            <div class="show-skills">
+                <h1>SKILLS</h1>
+                <p>Java Script</p>
+                <p>Java</p>
+                <p>Python</p>
+            </div>
+
+        </div>
+
+
+        <div class="right">
+            <div class="show-achivment">
+                <div class="head">
+                    <h1>ACHIEVEMENTS</h1>
+                </div>
+                <div class="achiveItem show-item">
+                    <p>Best Manager Award</p>
+                    <p>Best Manager Award achivements by Dave hertbert</p>
+                </div>
+                <div class="achiveItem  show-item">
+                    <p>Senior Director Nomination</p>
+                    <p>Senior Director Nomination</p>
+                </div>
+            </div>
+            <div class="show-education sameEE">
+                <div class="head">
+                    <h1>EDUCATIONS</h1>
+                </div>
+                <div class="show-item">
+                    <p>Winston School of Management</p>
+                    <div class="orgStart">
+                        <p>Graduate</p>
+                        <p>Uk Street</p>
+                        <div class="show-start">2022-10-15</div>
+                        <div class="show-end">2022-10-13</div>
+                    </div>
+                    <p>This is about winston School of Management</p>
+                </div>
+            </div>
+            <div class="show-experience sameEE">
+                <div class="head">
+                    <h1>EXPERIENCES</h1>
+                </div>
+                <div class="show-item">
+                    <p>Company A</p>
+                    <div class="orgStart">
+                        <p>A Organization & Pvt. Ltd.</p>
+                        <p>Highest Street</p>
+                        <div class="show-start">2022-10-15</div>
+                        <div class="show-end">2022-10-13</div>
+                    </div>
+                    <p>This is about Company A Experience</p>
+                </div>
+            </div>
+            <div class="show-project">
+                <div class="head">
+                    <h1>PROJECTS</h1>
+                </div>
+                <div class="project-item">
+                    <p>Managerial Project A</p>
+                    <p>www.hibban.com</p>
+                    <p>This is about Project1</p>
+                </div>
+                <div class="project-item">
+                    <p>Managerial Project A</p>
+                    <p>www.hibban.com</p>
+                    <p>This is about Project1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="downloadsection">
+        <div class="download">
+            download
+        </div>
+        <div class="printout">
+            printout
+        </div>
+        <div class="print">
+            print
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>All rights are reserved from Hibbanur Rahman @2023</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/printout.js"></script>
+
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+
+    <script src="./js/html2pdf.bundle.min.js"></script>
+</body>
+
+</html>
